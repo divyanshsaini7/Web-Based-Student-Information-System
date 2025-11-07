@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="student_dashboard.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="student_about.html">About Us</a>
+      <a href="student_dashboard.html" class="active">Dashboard</a>
+      <a href="student_attendance_record.html">Attendance</a>
+      <a href="student_marks.html">Marks</a>
+      <a href="student_timetable.html">Timetable</a>
+      <a href="student_notice.html">Notices</a>
+      <a href="student_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Student ⮟</button>
+        <div class="dropdown-content">
+          <a href="student_profile.html">Profile</a>
+          <a href="student_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard Section -->
+  <div class="dashboard-container">
+    <h1>Welcome, Student 👋</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <h2>Attendance</h2>
+        <p id="attendance">92%</p>
+      </div>
+
+      <div class="card">
+        <h2>GPA</h2>
+        <p id="gpa">8.7</p>
+      </div>
+
+      <div class="card">
+        <h2>Notices</h2>
+        <p id="noticeCount">3 New</p>
+      </div>
+    </div>
+
+    <div class="events-section">
+      <h2>📅 Upcoming Exams / Events</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody id="eventsTable">
+          <!-- Filled dynamically with JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="student_dashboard.js"></script>
+</body>
+</html>

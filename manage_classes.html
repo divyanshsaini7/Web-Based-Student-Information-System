@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Classes - Admin</title>
+  <link rel="stylesheet" href="manage_classes.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="about.html">About Us</a>
+      <a href="admin_dashboard.html">Dashboard</a>
+      <a href="manage_student.html">Students</a>
+      <a href="manage_courses.html">Courses</a>
+      <a href="manage_classes.html" class="active">Classes</a>
+      <a href="manage_reports.html">Reports</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Admin ⮟</button>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Manage Classes</h1>
+
+    <div class="form-section">
+      <h2>Create / Edit Class</h2>
+      <form id="classForm">
+        <input type="text" id="className" placeholder="Class Name (e.g., 10-A)" required>
+        <input type="text" id="classTeacher" placeholder="Class Teacher" required>
+        <button type="submit">Save Class</button>
+      </form>
+    </div>
+
+    <div class="assign-section">
+      <h2>Assign Students to Class</h2>
+      <form id="assignForm">
+        <input type="text" id="studentName" placeholder="Student Name" required>
+        <input type="text" id="assignClass" placeholder="Class Name" required>
+        <button type="submit">Assign</button>
+      </form>
+    </div>
+
+    <div class="table-section">
+      <h2>Class List</h2>
+      <table id="classTable">
+        <thead>
+          <tr>
+            <th>Class Name</th>
+            <th>Class Teacher</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Classes will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="manage_classes.js"></script>
+</body>
+</html>

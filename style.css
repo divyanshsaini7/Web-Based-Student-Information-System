@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Page Background */
+body {
+  background-image: url(https://psystems.co/wp-content/uploads/2020/06/edu-sis.svg);
+  /* background: linear-gradient(120deg, #4a90e2, #5ee7df); */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  /* color: white; */
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+/* Login Box */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.login-box {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.captcha-group {
+  position: relative;
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#captchaCanvas {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#refreshCaptcha {
+  margin-left: 8px;
+  padding: 6px 8px;
+  background: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#refreshCaptcha:hover {
+  background: #3b7dc3;
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #3b7dc3;
+}
+
+/* Links */
+.form-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-links a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}

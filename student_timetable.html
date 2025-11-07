@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Timetable | Student Information System</title>
+  <link rel="stylesheet" href="student_timetable.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo" />
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="student_about.html">About Us</a>
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="student_attendance_record.html">Attendance</a>
+      <a href="student_marks.html">Marks</a>
+      <a href="student_timetable.html" class="active">Timetable</a>
+      <a href="student_notice.html">Notices</a>
+      <a href="student_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Student ⮟</button>
+        <div class="dropdown-content">
+          <a href="student_profile.html">Profile</a>
+          <a href="student_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Timetable</h1>
+
+    <!-- Class Timetable -->
+    <section class="timetable-section">
+      <h2>Class Schedule</h2>
+      <table id="classTimetable">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>8:00 - 9:00</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+            <th>2:00 - 3:00</th>
+            <th>3:00 - 4:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- filled by JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Exam Timetable -->
+    <section class="timetable-section">
+      <h2>Exam Timetable</h2>
+      <table id="examTimetable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Time</th>
+            <th>Room No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- filled by JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="student_timetable.js"></script>
+</body>
+</html>

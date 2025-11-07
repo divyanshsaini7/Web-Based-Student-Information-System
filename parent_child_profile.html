@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Profile</title>
+  <link rel="stylesheet" href="parent_child_profile.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" class="logo" alt="Logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="parent_about.html">About Us</a>
+      <a href="parent_dashboard.html">Dashboard</a>
+      <a href="parent_child_profile.html" class="active">Child Profile</a>
+      <a href="parent_attendance.html">Attendance</a>
+      <a href="parent_marks.html">Marks</a>
+      <a href="parent_notices.html">Notices</a>
+      <a href="parent_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Parent ▾</button>
+        <div class="dropdown-content">
+          <a href="parent_profile.html">Profile</a>
+          <a href="parent_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Child Profile Section -->
+  <div class="profile-container">
+    <h1>Child Profile 👩‍🎓</h1>
+
+    <div class="profile-card">
+      <div class="profile-photo">
+        <img src="images\student_avatar.png" alt="Child Photo">
+      </div>
+
+      <div class="profile-info">
+        <h2>Personal Information</h2>
+        <div class="info-grid">
+          <div><strong>Name:</strong> <span id="childName">Aarav Sharma</span></div>
+          <div><strong>Roll No:</strong> <span id="rollNo">23</span></div>
+          <div><strong>Gender:</strong> <span id="gender">Male</span></div>
+          <div><strong>DOB:</strong> <span id="dob">15 March 2012</span></div>
+          <div><strong>Class:</strong> <span id="class">7A</span></div>
+          <div><strong>Section:</strong> <span id="section">A</span></div>
+        </div>
+
+        <h2>Academic Information</h2>
+        <div class="info-grid">
+          <div><strong>Session:</strong> 2025–2026</div>
+          <div><strong>Assigned Teacher:</strong> Mrs. Meena Kapoor</div>
+          <div><strong>Average Marks:</strong> 88%</div>
+          <div><strong>Attendance:</strong> 95%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subjects-section">
+      <h2>Assigned Subjects 📘</h2>
+      <ul id="subjectList">
+        <li>English</li>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>Social Studies</li>
+        <li>Computer Science</li>
+        <li>Hindi</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="parent_child_profile.js"></script>
+</body>
+</html>

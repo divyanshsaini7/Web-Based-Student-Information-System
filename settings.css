@@ -1,0 +1,150 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.system-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-center a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover,
+.nav-center a.active {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bell {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  top: 30px;
+  right: 0;
+  min-width: 150px;
+}
+
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Container */
+.container {
+  padding: 30px;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.settings-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 300px;
+}
+
+button {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2a47b8;
+}

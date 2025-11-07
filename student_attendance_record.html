@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Attendance Record</title>
+  <link rel="stylesheet" href="student_attendance_record.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo" />
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="student_about.html">About Us</a>
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="student_attendance_record.html" class="active">Attendance</a>
+      <a href="student_marks.html">Marks</a>
+      <a href="student_timetable.html">Timetable</a>
+      <a href="student_notice.html">Notices</a>
+      <a href="student_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Student ⮟</button>
+        <div class="dropdown-content">
+          <a href="student_profile.html">Profile</a>
+          <a href="student_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Attendance Section -->
+  <div class="attendance-container">
+    <h1>📅 Attendance Record - Full Year (2025)</h1>
+
+    <div class="slider-controls">
+      <button id="prevBtn">⬅️ Prev</button>
+      <span id="monthLabel"></span>
+      <button id="nextBtn">Next ➡️</button>
+    </div>
+
+    <div id="calendarContainer" class="calendar-container"></div>
+
+    <div class="legend">
+      <span class="legend-item"><span class="dot present-dot"></span> Present</span>
+      <span class="legend-item"><span class="dot absent-dot"></span> Absent</span>
+      <span class="legend-item"><span class="dot not-marked-dot"></span> Not Marked</span>
+      <span class="legend-item"><span class="dot sunday-dot"></span> Sunday</span>
+    </div>
+
+    <div class="summary">
+      <h2>Yearly Attendance Summary</h2>
+      <p><strong>Total Days:</strong> <span id="totalDays">0</span></p>
+      <p><strong>Present Days:</strong> <span id="presentDays">0</span></p>
+      <p><strong>Attendance Percentage:</strong> <span id="attendancePercent">0%</span></p>
+      <button id="downloadBtn">⬇️ Download as PDF</button>
+    </div>
+  </div>
+
+  <script src="student_attendance_record.js"></script>
+</body>
+</html>

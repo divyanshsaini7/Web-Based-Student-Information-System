@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent - Marks Overview</title>
+  <link rel="stylesheet" href="parent_marks.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" class="logo" alt="Logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="parent_about.html">About Us</a>
+      <a href="parent_dashboard.html">Dashboard</a>
+      <a href="parent_child_profile.html">Child Profile</a>
+      <a href="parent_attendance.html">Attendance</a>
+      <a href="parent_marks.html" class="active">Marks</a>
+      <a href="parent_notices.html">Notices</a>
+      <a href="parent_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Parent ▾</button>
+        <div class="dropdown-content">
+          <a href="parent_profile.html">Profile</a>
+          <a href="parent_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marks Overview -->
+  <div class="marks-container">
+    <h1>Marks & Grades Overview 📊</h1>
+
+    <!-- Subject-wise Marks -->
+    <div class="marks-table-section">
+      <h2>Subject-wise Marks</h2>
+      <table class="marks-table">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Midterm (100)</th>
+            <th>Final (100)</th>
+            <th>Average</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody id="marksTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Graphical Performance Trend -->
+    <div class="chart-section">
+      <h2>Performance Trend</h2>
+      <canvas id="trendChart"></canvas>
+    </div>
+
+    <!-- Exam Comparison -->
+    <div class="chart-section">
+      <h2>Exam Comparison</h2>
+      <canvas id="examChart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="parent_marks.js"></script>
+</body>
+</html>

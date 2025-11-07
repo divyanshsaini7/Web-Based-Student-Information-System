@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact & Help - Student Information System</title>
+  <link rel="stylesheet" href="student_contact.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="student_about.html">About Us</a>
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="student_attendance_record.html">Attendance</a>
+      <a href="student_marks.html">Marks</a>
+      <a href="student_timetable.html">Timetable</a>
+      <a href="student_notice.html">Notices</a>
+      <a href="student_contact.html" class="active">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Student ▼</button>
+        <div class="dropdown-content">
+          <a href="student_profile.html">Profile</a>
+          <a href="student_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Contact Form Section -->
+    <section class="section contact-form">
+      <h2>📩 Contact Us</h2>
+      <p>If you have any questions or feedback, please fill out the form below.</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required placeholder="Type your message here..."></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p class="confirmation" id="confirmationMsg"></p>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="section faq">
+      <h2>❓ Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>1. How can I check my child’s attendance?</h3>
+        <p>Go to the <strong>Attendance</strong> section from the navigation bar to view detailed attendance records.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>2. How can I download my child’s report card?</h3>
+        <p>Navigate to the <strong>Marks</strong> section and click on “Download Report” to get the PDF version.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>3. What should I do if I forget my password?</h3>
+        <p>Click on the <strong>Forgot Password</strong> link on the login page to reset your password securely.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>4. How can I contact the school directly?</h3>
+        <p>You can find contact details below or send us a message using the form above.</p>
+      </div>
+    </section>
+
+    <!-- Institution Contact Info -->
+    <section class="section contact-info">
+      <h2>🏫 Institution Contact Information</h2>
+      <p><strong>Institution:</strong> Sunrise Public School</p>
+      <p><strong>Email:</strong> info@sunriseschool.edu.in</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> 123 Knowledge Avenue, Education City, India</p>
+    </section>
+
+  </div>
+
+  <script src="student_contact.js"></script>
+</body>
+</html>

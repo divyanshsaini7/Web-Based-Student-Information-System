@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  background: #f4f6fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.system-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-center a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover,
+.nav-center a.active {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bell {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.profile-dropdown {
+  position: relative;
+}
+.profile-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  right: 0;
+  min-width: 150px;
+}
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  padding: 30px;
+}
+.dashboard h1 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+  min-width: 220px;
+}
+.card h2 {
+  color: #1e3a8a;
+  font-size: 18px;
+}
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Performance Section */
+.performance {
+  margin-top: 40px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.performance h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+canvas {
+  width: 100%;
+  height: 400px;
+}

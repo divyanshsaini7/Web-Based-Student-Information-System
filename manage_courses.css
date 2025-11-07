@@ -1,0 +1,237 @@
+/* ===== General ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6fa;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  margin-right: 10px;
+}
+
+.system-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-center a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.nav-center a:hover,
+.nav-center a.active {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.notification {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #fff;
+  color: #333;
+  min-width: 150px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  padding: 25px;
+}
+
+.main-content h2 {
+  margin-top: 10px;
+  color: #004aad;
+  font-size: 1.6rem;
+}
+
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+#searchInput {
+  width: 250px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addCourseBtn {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addCourseBtn:hover {
+  background-color: #003b8e;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #e9effd;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f1f6ff;
+}
+
+.action-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffb703;
+}
+
+.delete-btn {
+  background-color: #e63946;
+}
+
+.edit-btn:hover {
+  background-color: #ffa600;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+/* ===== Modal ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#saveCourseBtn {
+  background-color: #004aad;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#saveCourseBtn:hover {
+  background-color: #003b8e;
+}

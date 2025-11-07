@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent - Attendance Overview 2025</title>
+  <link rel="stylesheet" href="parent_attendance.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" class="logo" alt="Logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="parent_about.html">About Us</a>
+      <a href="parent_dashboard.html">Dashboard</a>
+      <a href="parent_child_profile.html">Child Profile</a>
+      <a href="parent_attendance.html" class="active">Attendance</a>
+      <a href="parent_marks.html">Marks</a>
+      <a href="parent_notices.html">Notices</a>
+      <a href="parent_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Parent ▾</button>
+        <div class="dropdown-content">
+          <a href="parent_profile.html">Profile</a>
+          <a href="parent_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Attendance Overview -->
+  <div class="attendance-container">
+    <h1>Attendance Overview - 2025 📅</h1>
+
+    <!-- Month Selector -->
+    <div class="month-selector">
+      <button id="prevMonth">←</button>
+      <span id="currentMonth"></span>
+      <button id="nextMonth">→</button>
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar">
+      <div class="calendar-header">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div id="calendar-days" class="calendar-days"></div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <h2>Attendance Summary</h2>
+      <p><strong>Total Working Days:</strong> <span id="totalDays">0</span></p>
+      <p><strong>Days Present:</strong> <span id="daysPresent">0</span></p>
+      <p><strong>Days Absent:</strong> <span id="daysAbsent">0</span></p>
+      <p><strong>Not Marked Days:</strong> <span id="notMarked">0</span></p>
+      <p><strong>Attendance Percentage:</strong> <span id="attendancePercent">0%</span></p>
+    </div>
+  </div>
+
+  <script src="parent_attendance.js"></script>
+</body>
+</html>

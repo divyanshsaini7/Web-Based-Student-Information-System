@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports & Analytics - Admin</title>
+  <link rel="stylesheet" href="manage_reports.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="about.html">About Us</a>
+      <a href="admin_dashboard.html">Dashboard</a>
+      <a href="manage_student.html">Students</a>
+      <a href="manage_courses.html">Courses</a>
+      <a href="manage_classes.html">Classes</a>
+      <a href="manage_reports.html" class="active">Reports</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Admin ⮟</button>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Reports & Analytics</h1>
+
+    <div class="report-section">
+      <h2>📅 Attendance Reports</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Class</th>
+            <th>Attendance %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Aarav Sharma</td><td>10-A</td><td>95%</td></tr>
+          <tr><td>Siya Gupta</td><td>10-B</td><td>89%</td></tr>
+          <tr><td>Rahul Kumar</td><td>9-C</td><td>92%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="report-section">
+      <h2>🧮 Marks Reports</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Class</th>
+            <th>Average Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Aarav Sharma</td><td>10-A</td><td>88%</td></tr>
+          <tr><td>Siya Gupta</td><td>10-B</td><td>91%</td></tr>
+          <tr><td>Rahul Kumar</td><td>9-C</td><td>85%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-section">
+      <h2>📊 Performance Chart</h2>
+      <canvas id="performanceChart" width="600" height="300"></canvas>
+    </div>
+
+    <div class="export-buttons">
+      <button id="exportPDF">Export PDF</button>
+      <button id="exportExcel">Export Excel</button>
+    </div>
+  </div>
+
+  <script src="manage_reports.js"></script>
+</body>
+</html>

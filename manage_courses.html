@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Courses | Student Information System</title>
+  <link rel="stylesheet" href="manage_courses.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="about.html">About Us</a>
+      <a href="admin_dashboard.html">Dashboard</a>
+      <a href="manage_student.html">Students</a>
+      <a href="manage_courses.html" class="active">Courses</a>
+      <a href="manage_classes.html">Classes</a>
+      <a href="manage_reports.html">Reports</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+
+    <div class="nav-right">
+      <span class="notification">🔔</span>
+      <div class="dropdown">
+        <button class="dropbtn">Admin ▼</button>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main-content">
+    <h2>Manage Courses / Subjects</h2>
+
+    <div class="action-bar">
+      <input type="text" id="searchInput" placeholder="Search by Course Name or ID">
+      <button id="addCourseBtn">➕ Add Course</button>
+    </div>
+
+    <table id="courseTable">
+      <thead>
+        <tr>
+          <th>Course ID</th>
+          <th>Course Name</th>
+          <th>Assigned Class</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS will populate rows -->
+      </tbody>
+    </table>
+  </main>
+
+  <!-- ===== Modal ===== -->
+  <div id="courseModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle">Add Course</h3>
+      <form id="courseForm">
+        <label>Course ID:</label>
+        <input type="text" id="courseId" required>
+
+        <label>Course Name:</label>
+        <input type="text" id="courseName" required>
+
+        <label>Assigned Class:</label>
+        <input type="text" id="assignedClass" required>
+
+        <button type="submit" id="saveCourseBtn">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="manage_courses.js"></script>
+</body>
+</html>

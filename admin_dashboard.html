@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Student Information System</title>
+  <link rel="stylesheet" href="admin_dashboard.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="System Logo" class="logo" />
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="about.html">About Us</a>
+      <a href="admin_dashboard.html" class="active">Dashboard</a>
+      <a href="manage_student.html">Students</a>
+      <a href="manage_courses.html">Courses</a>
+      <a href="manage_classes.html">Classes</a>
+      <a href="manage_reports.html">Reports</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Admin ▼</button>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard Main -->
+  <main class="dashboard">
+    <h1>Admin Dashboard</h1>
+
+    <!-- Cards Section -->
+    <section class="cards">
+      <div class="card">
+        <h3>Total Students</h3>
+        <p id="studentCount">245</p>
+      </div>
+      <div class="card">
+        <h3>Total Classes</h3>
+        <p id="classCount">12</p>
+      </div>
+      <div class="card">
+        <h3>Avg. Attendance</h3>
+        <p id="attendanceAvg">87%</p>
+      </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="charts">
+      <div class="chart-box">
+        <h3>Performance Summary</h3>
+        <canvas id="performanceChart" width="400" height="200"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <h3>Attendance Overview</h3>
+        <canvas id="attendanceChart" width="400" height="200"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin_dashboard.js"></script>
+</body>
+</html>

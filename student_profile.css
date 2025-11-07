@@ -1,0 +1,167 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.system-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-center a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover,
+.nav-center a.active {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bell {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* top: 30px; */
+  right: 0;
+  min-width: 150px;
+}
+
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Profile Page Styles */
+.profile-container {
+  padding: 40px;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #1e3a8a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input:disabled {
+  background: #f0f0f0;
+}
+
+button {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2a47b8;
+}

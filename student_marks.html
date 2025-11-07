@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Marks | Student Information System</title>
+  <link rel="stylesheet" href="student_marks.css" />
+</head>
+<body>
+
+  <!-- Navbar (Student) -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo" />
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="student_about.html">About Us</a>
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="student_attendance_record.html">Attendance</a>
+      <a href="student_marks.html" class="active">Marks</a>
+      <a href="student_timetable.html">Timetable</a>
+      <a href="student_notice.html">Notices</a>
+      <a href="student_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Student ⮟</button>
+        <div class="dropdown-content">
+          <a href="student_profile.html">Profile</a>
+          <a href="student_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="container">
+    <h1>Marks & Grades</h1>
+
+    <!-- Summary -->
+    <section class="summary-row">
+      <div class="summary-card">
+        <h3>GPA</h3>
+        <p id="gpa">—</p>
+      </div>
+      <div class="summary-card">
+        <h3>Average (%)</h3>
+        <p id="avgPercent">—</p>
+      </div>
+      <div class="summary-card">
+        <h3>Download</h3>
+        <div class="download-actions">
+          <button id="downloadCsv">⬇️ Download CSV</button>
+          <button id="printBtn">🖨️ Print</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marks Table -->
+    <section class="table-section">
+      <h2>Subject-wise Marks</h2>
+      <table id="marksTable">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Max Marks</th>
+            <th>Obtained</th>
+            <th>%</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JS fills data -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Chart -->
+    <section class="chart-section">
+      <h2>Performance Chart</h2>
+      <canvas id="marksChart" width="700" height="300"></canvas>
+    </section>
+  </main>
+
+  <script src="student_marks.js"></script>
+</body>
+</html>

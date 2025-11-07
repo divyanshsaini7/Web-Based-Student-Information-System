@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parent - Notices & Feedback</title>
+  <link rel="stylesheet" href="parent_notices.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" class="logo" alt="Logo" />
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="parent_about.html">About Us</a>
+      <a href="parent_dashboard.html">Dashboard</a>
+      <a href="parent_child_profile.html">Child Profile</a>
+      <a href="parent_attendance.html">Attendance</a>
+      <a href="parent_marks.html">Marks</a>
+      <a href="parent_notices.html" class="active">Notices</a>
+      <a href="parent_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Parent ▾</button>
+        <div class="dropdown-content">
+          <a href="parent_profile.html">Profile</a>
+          <a href="parent_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1>Notices & Feedback</h1>
+
+    <!-- Notices Section -->
+    <section class="notices-section">
+      <h2>Latest Notices</h2>
+      <div id="noticesList" class="notices-list">
+        <!-- Notices will load here dynamically -->
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+      <h2>Send Feedback / Query</h2>
+      <form id="feedbackForm">
+        <div class="form-group">
+          <label for="feedbackSubject">Subject</label>
+          <input type="text" id="feedbackSubject" placeholder="Enter subject" required />
+        </div>
+
+        <div class="form-group">
+          <label for="feedbackMessage">Message</label>
+          <textarea id="feedbackMessage" rows="4" placeholder="Type your feedback or query..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+      </form>
+      <p id="feedbackStatus" class="feedback-status"></p>
+    </section>
+  </div>
+
+  <script src="parent_notices.js"></script>
+</body>
+</html>

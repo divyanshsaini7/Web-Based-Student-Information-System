@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="student_profile.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo">
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="student_about.html">About Us</a>
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="student_attendance_record.html">Attendance</a>
+      <a href="student_marks.html">Marks</a>
+      <a href="student_timetable.html">Timetable</a>
+      <a href="student_notice.html">Notices</a>
+      <a href="student_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Student ⮟</button>
+        <div class="dropdown-content">
+          <a href="student_profile.html" class="active">Profile</a>
+          <a href="student_settings.html">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Page -->
+  <div class="profile-container">
+    <h1>Student Profile</h1>
+
+    <div class="profile-card">
+      <img src="images\student_avatar.png" alt="Student Avatar" class="profile-pic">
+
+      <form id="profileForm">
+        <label>Full Name</label>
+        <input type="text" id="name" value="Aarav Sharma" required>
+
+        <label>Email Address</label>
+        <input type="email" id="email" value="aarav@gmail.com" required>
+
+        <label>Phone Number</label>
+        <input type="text" id="phone" value="+91 9876543210" required>
+
+        <label>Role</label>
+        <input type="text" id="role" value="Student" disabled>
+
+        <button type="submit">Update Profile</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="student_profile.js"></script>
+</body>
+</html>

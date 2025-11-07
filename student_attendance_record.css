@@ -1,0 +1,275 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.system-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-center a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover,
+.nav-center a.active {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bell {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* top: 30px; */
+  right: 0;
+  min-width: 150px;
+}
+
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Attendance Section */
+.attendance-container {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Slider Controls */
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.slider-controls button {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background: #274bb3;
+}
+
+#monthLabel {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1e3a8a;
+}
+
+/* Calendar */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 360px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 14px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day {
+  background: #e5e7eb;
+  border-radius: 6px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.present {
+  background: #22c55e;
+  color: white;
+}
+
+.absent {
+  background: #ef4444;
+  color: white;
+}
+
+.not-marked {
+  background: #d1d5db;
+  color: #555;
+}
+
+.sunday {
+  background: #fecaca !important;
+  color: #b91c1c !important;
+}
+
+/* Legend */
+.legend {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.present-dot {
+  background: #22c55e;
+}
+
+.absent-dot {
+  background: #ef4444;
+}
+
+.not-marked-dot {
+  background: #d1d5db;
+}
+
+.sunday-dot {
+  background: #fecaca;
+}
+
+/* Summary */
+.summary {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.summary h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.summary p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+#downloadBtn {
+  margin-top: 15px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#downloadBtn:hover {
+  background: #274bb3;
+}

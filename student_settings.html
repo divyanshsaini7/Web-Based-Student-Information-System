@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings | Student Information System</title>
+  <link rel="stylesheet" href="student_settings.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images\logo.png" alt="Logo" class="logo" />
+      <span class="system-name">Student Information System</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="student_about.html">About Us</a>
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="student_attendance_record.html">Attendance</a>
+      <a href="student_marks.html">Marks</a>
+      <a href="student_timetable.html">Timetable</a>
+      <a href="student_notice.html">Notices</a>
+      <a href="student_contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="bell">🔔</span>
+      <div class="profile-dropdown">
+        <button class="profile-btn">Student ⮟</button>
+        <div class="dropdown-content">
+          <a href="student_profile.html">Profile</a>
+          <a href="student_settings.html" class="active">Settings</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <main class="settings-container">
+    <h1>Settings</h1>
+
+    <!-- Edit Profile Section -->
+    <!-- <section class="card">
+      <h2>Edit Profile</h2>
+      <form id="profileForm">
+        <div class="profile-details">
+          <p><strong>Name:</strong> Aarav Sharma</p>
+          <p><strong>Roll Number:</strong> 23CS1021</p>
+          <p><strong>Course:</strong> B.Tech Computer Science</p>
+
+          <div class="editable-field">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" value="aarav@gmail.com" required />
+          </div>
+
+          <div class="editable-field">
+            <label for="contact"><strong>Contact:</strong></label>
+            <input type="tel" id="contact" value="+91 9876543210" required />
+          </div>
+
+          <button type="submit" class="save-btn">Save Changes</button>
+        </div>
+      </form>
+    </section> -->
+
+    <!-- Change Password Section -->
+    <section class="card">
+      <h2>Change Password</h2>
+      <form id="passwordForm">
+        <div class="form-group">
+          <label for="currentPassword">Current Password</label>
+          <input type="password" id="currentPassword" required />
+        </div>
+
+        <div class="form-group">
+          <label for="newPassword">New Password</label>
+          <input type="password" id="newPassword" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm New Password</label>
+          <input type="password" id="confirmPassword" required />
+        </div>
+
+        <button type="submit">Update Password</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="student_settings.js"></script>
+</body>
+</html>
